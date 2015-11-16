@@ -100,7 +100,7 @@ err_ret:
     return ret;
 }
 
-JNIEXPORT void JNICALL Java_com_cyanogenmod_settings_device_MotoSensor_native_1enableWakeSensor(
+JNIEXPORT void JNICALL Java_com_slim_device_MotoSensor_native_1enableWakeSensor(
         UNUSED JNIEnv *env, UNUSED jclass thiz, jint wakeSensor)
 {
     uint16_t wake_sensors = 0;
@@ -132,7 +132,7 @@ JNIEXPORT void JNICALL Java_com_cyanogenmod_settings_device_MotoSensor_native_1e
     pthread_mutex_unlock(&ioctl_mutex);
 }
 
-JNIEXPORT void JNICALL Java_com_cyanogenmod_settings_device_MotoSensor_native_1disableWakeSensor(
+JNIEXPORT void JNICALL Java_com_slim_device_MotoSensor_native_1disableWakeSensor(
         UNUSED JNIEnv *env, UNUSED jclass thiz, jint wakeSensor)
 {
     uint16_t wake_sensors = 0;

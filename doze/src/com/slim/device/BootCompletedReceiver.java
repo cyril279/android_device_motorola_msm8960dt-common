@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.device;
+package com.slim.device;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -22,6 +22,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.util.Log;
+
+import com.slim.device.settings.ScreenOffGestureSettings;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -31,7 +33,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Starting service");
-        enableComponent(context, TouchscreenGestureSettings.class.getName());
+        enableComponent(context, ScreenOffGestureSettings.class.getName());
         context.startService(new Intent(context, MotoDozeService.class));
     }
 
