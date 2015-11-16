@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.device;
+package com.slim.device;
 
 import android.app.Activity;
 import android.app.IntentService;

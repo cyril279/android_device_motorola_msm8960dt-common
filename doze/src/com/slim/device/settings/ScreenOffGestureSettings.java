@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.device;
+package com.slim.device.settings;
 
 import android.app.ActionBar;
 import android.os.Bundle;
@@ -27,7 +27,9 @@ import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class TouchscreenGestureSettings extends PreferenceActivity {
+import com.slim.device.R;
+
+public class ScreenOffGestureSettings extends PreferenceActivity {
 
     private static final String KEY_AMBIENT_DISPLAY_ENABLE = "ambient_display_enable";
     private static final String KEY_GESTURE_PICK_UP = "gesture_pick_up";
