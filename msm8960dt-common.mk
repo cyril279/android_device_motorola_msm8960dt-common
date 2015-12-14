@@ -74,6 +74,9 @@ PRODUCT_PACKAGES += \
     mbhc.bin \
     wcd9310_anc.bin
 
+PRODUCT_PACKAGES += \
+    Eleven
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
